@@ -12,7 +12,7 @@ CustomModifiers:ToggleConnotations(true)
 
 -- Create a floor for the modifiers
 CustomModifiers:CreateFloor({
-    Title = "Example Floor", -- Floor name
+    Title = "The Hotel", -- Floor name
     Destination = "Hotel", -- Destination of where the elevator should lead to (Hotel, Mines, Backdoor)
     Image = "rbxassetid://18992618548", -- Background image for the floor
     Font = Enum.Font.Oswald, -- Font text for the floor text
@@ -31,9 +31,9 @@ CustomModifiers:CreateFloor({
 
 -- Create a category for the modifier
 CustomModifiers:CreateCategory({
-    Title = "Example Category", -- Category name
+    Title = "Weird modded modifiers", -- Category name
     Sort = 0, -- Category sort order
-    Floor = "Example Floor", -- Category floor
+    Floor = "Hotel", -- Category floor
     Color = Color3.fromRGB(255, 222, 189) -- Category color
 })
 
@@ -51,7 +51,7 @@ CustomModifiers:CreateModifier({
         NoRift = false, -- Rift display
         NoProgress = true -- Progress display
     },
-    Unlock = "TimeMaster", -- Achievement needed to activate the modifier
+    Unlock = "Join", -- Achievement needed to activate the modifier
     Activation = [[ -- Custom code to execute after the loading screen
         local RunService = game:GetService("RunService")
         local Players = game:GetService("Players")
